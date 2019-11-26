@@ -69,8 +69,11 @@ img{
 /* inzio responsive */
 
 @media screen and (max-width: 420px) {
+  .row {
+    margin-top: 0;
+  }
   #lezioni .row{
-    background-color: blue;
+    /* background-color: blue; */
   }
 
   #lezioni .row > .left, #lezioni .row > .right {
@@ -83,4 +86,26 @@ img{
  #lezioni .row img {
    height: 90px;
  }
+
+ #steps .row .left,
+ #steps .row .central,
+ #steps .row .right {
+   width: 100%;
+   text-align: left;
+ }
+
+ #steps .row .left img,
+ #steps .row .central img,
+ #steps .row .right img {
+   float: left;
+   height: 80px;
+   margin: 15px;
+ }
+ #steps .row .left h3,
+ #steps .row .central h3,
+ #steps .row .right h3 {
+   color: orange;
+   text-decoration: underline;
+ }
+
 }
