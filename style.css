@@ -6,7 +6,7 @@
 }
 
 /* BLOCCO LEZIONI */
-#lezioni .row > .left, #lezioni .row > .right{
+#lezioni .row>.left, #lezioni .row>.right {
   width: 50%;
   float: left;
 }
@@ -23,14 +23,14 @@
 }
 
 /* BLOCCO STEPS */
-#steps .row > .left,
-#steps .row > .central,
-#steps .row > .right{
+#steps .row>.left,
+#steps .row>.central,
+#steps .row>.right {
   float: left;
   width: 33%;
 }
 
-#steps{
+#steps {
   text-align: center;
 }
 
@@ -39,73 +39,113 @@
   text-align: center;
 }
 
-#why .row > .first,
-#why .row > .second,
-#why .row > .third {
+#why .row>.first,
+#why .row>.second,
+#why .row>.third {
   width: 100%;
   margin-top: 80px;
 }
 
 #why .row img {
-  background-color:#428bca;
-  border-radius:50%;
-  padding:30px
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px
 }
 
 /* COMMON */
-
-.container.grey{
+.container.grey {
   background-color: #f9f9f9;
 }
 
-img{
+img {
   height: 200px;
 }
 
 .clear {
-  clear:both;
+  clear: both;
 }
 
 /* inzio responsive */
-
 @media screen and (max-width: 420px) {
-  .row {
-    margin-top: 0;
-  }
-  #lezioni .row{
-    /* background-color: blue; */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
 
-  #lezioni .row > .left, #lezioni .row > .right {
+  h1 {
+    padding: 25px;
+  }
+
+  h3 {
+    color: orange;
+    text-decoration: underline;
+    padding: 10px 0;
+  }
+
+  hr {
+    margin-top: 40px;
+    border: 2px solid #4b79cf;
+  }
+
+  .container.grey {
+    background-color: aliceblue;
+    width: 100%;
+  }
+
+  .row {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  #lezioni .row {
+    /* background-color: blue; */
+    padding: 20px;
+    margin-top: 10px;
+  }
+
+  #lezioni .row>.left, #lezioni .row>.right {
     width: 100%;
     float: none;
   }
-#lezioni .row > .right{
-  margin-top: 25px;
-}
- #lezioni .row img {
-   height: 90px;
- }
 
- #steps .row .left,
- #steps .row .central,
- #steps .row .right {
-   width: 100%;
-   text-align: left;
- }
+  #lezioni .row>.right {
+    margin-top: 25px;
+  }
 
- #steps .row .left img,
- #steps .row .central img,
- #steps .row .right img {
-   float: left;
-   height: 80px;
-   margin: 15px;
- }
- #steps .row .left h3,
- #steps .row .central h3,
- #steps .row .right h3 {
-   color: orange;
-   text-decoration: underline;
- }
+  #lezioni .row img {
+    height: 80px;
+  }
 
+  #steps .row .left,
+  #steps .row .central,
+  #steps .row .right {
+    width: 100%;
+    text-align: left;
+  }
+
+  #steps .row .left img,
+  #steps .row .central img,
+  #steps .row .right img {
+    float: left;
+    height: 80px;
+    margin: 15px;
+  }
+
+  #why .row .first,
+  #why .row .second,
+  #why .row .third {
+    width: 100%;
+    text-align: left;
+    height: 100px;
+    vertical-align: middle;
+  }
+
+  #why .row .first img,
+  #why .row .second img,
+  #why .row .third img {
+    float: left;
+    height: 100px;
+    margin: 15px;
+  }
 }
